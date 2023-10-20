@@ -25,12 +25,17 @@ public class Bank {
         System.out.println(user.getBalance());
     } else if (choice.equals("d")) {
         System.out.println("Deposit Amount?");
-        double depositAmount = Double.parseDouble(scan.nextLine());;
+        double depositAmount = Double.parseDouble(scan.nextLine());
         user.depositAmount(depositAmount);
         System.out.println(user.getBalance());
     } else {
-        System.out.println("Goodbye");
-        isExit = true;
+        if (choice.equals("e")) {
+            System.out.println("Goodbye");
+            isExit = true;
+        } else{
+            System.out.println("Please select a valid option!");
+        }
+
     }
 
     }
