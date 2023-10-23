@@ -37,4 +37,13 @@ public class Smartphone extends Product{
 
         return super.toString() + " Imei: " + getImei() + " GB: " + getGb();
     }
+
+    @Override
+    public double getDiscount(boolean isPremium) {
+        double fullPrice = getFullPrice();
+        if (isPremium && getGb() < 32 ) {
+            fullPrice *= 0.95;
+        }
+        return fullPrice;
+    }
 }

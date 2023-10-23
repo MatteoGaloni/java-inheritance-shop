@@ -37,4 +37,13 @@ public class Tv extends Product{
     public String toString() {
         return super.toString() + " Inches: " + getInches() + " Smart: " + isSmart();
     }
+
+    @Override
+    public double getDiscount(boolean isPremium) {
+        double fullPrice = getFullPrice();
+        if (isPremium && !isSmart()) {
+            fullPrice *= 0.90;
+        }
+        return fullPrice;
+    }
 }

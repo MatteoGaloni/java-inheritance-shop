@@ -77,7 +77,7 @@ public class Product {
     }
 
     //Methods
-    public double getVatPrice(){
+    public double getFullPrice(){
        return price + (price * (vat / 100.00));
     }
 
@@ -87,8 +87,19 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Name: " + getFullName() + " Description: " + getDescription() + " Full Price: " + getVatPrice() + " Vat: " + getVat();
+        return "Name: " + getFullName() + " Description: " + getDescription() + " Full Price: " + getFullPrice() + " Vat: " + getVat();
     }
+
+    public double getDiscount(boolean isPremium) {
+        double fullPrice = getFullPrice();
+        if (isPremium) {
+            fullPrice *= 0.98;
+        }
+        return fullPrice;
+    }
+
+
+
 
     //    private String getPaddedCode(){
 //        String codeString = Integer.toString(referenceCode);

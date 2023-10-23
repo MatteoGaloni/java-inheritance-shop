@@ -4,6 +4,11 @@ import java.util.Scanner;
 public class Chart {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
+
+        System.out.println("Are you a Premium Customer? Enter true or false");
+        boolean isPremium =  Boolean.parseBoolean(scan.nextLine());
+
         System.out.println("How many items would you like to buy?");
         int quantity = Integer.parseInt(scan.nextLine());
 
@@ -54,7 +59,7 @@ public class Chart {
                     chart[i] = new Headphones(productName, productDescription, productPrice, productVat, color, isWireless);
                 }
 
-                total += chart[i].getVatPrice();
+                total += chart[i].getDiscount(isPremium);
 
             } else {
                 System.out.println("Invalid option");

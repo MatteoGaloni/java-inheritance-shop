@@ -37,4 +37,13 @@ public class Headphones extends Product{
     public String toString() {
         return super.toString() + " Color: " + getColor() + " Wireless: " + isWireless();
     }
+
+    @Override
+    public double getDiscount(boolean isPremium) {
+        double fullPrice = getFullPrice();
+        if (isPremium && !isWireless() ) {
+            fullPrice *= 0.93;
+        }
+        return fullPrice;
+    }
 }
