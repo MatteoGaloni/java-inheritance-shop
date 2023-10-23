@@ -1,5 +1,5 @@
 package org.lessons.java.shop;
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
 public class Chart {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class Chart {
         double total = 0.0;
 
         for (int i = 0; i < quantity; i++) {
-            System.out.println("What would you like to buy? 1:Smarthphone - 2:Tv - 3:Headphones");
+            System.out.println("What would you like to buy? 1:Smartphone - 2:Tv - 3:Headphones");
             int chosenProduct = Integer.parseInt(scan.nextLine());
 
             if (chosenProduct == 1 || chosenProduct == 2 || chosenProduct == 3) {
@@ -23,16 +23,16 @@ public class Chart {
                 String productDescription = scan.nextLine();
 
                 System.out.println("Please enter productPrice: ");
-                Double productPrice = Double.parseDouble(scan.nextLine());
+                double productPrice = Double.parseDouble(scan.nextLine());
 
                 System.out.println("Please enter productVat: ");
                 int productVat = Integer.parseInt(scan.nextLine());
 
-                int gb = 0;
-                int inches = 0;
-                boolean isSmart = false;
-                String color = "";
-                boolean isWireless = false;
+                int gb;
+                int inches;
+                boolean isSmart;
+                String color;
+                boolean isWireless;
 
                 if (chosenProduct == 1) {
                     System.out.println("Please enter GB: ");

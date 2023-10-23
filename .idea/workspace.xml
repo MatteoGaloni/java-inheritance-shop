@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f303f97b-6eff-486d-b1e0-c9c86d31c44d" name="Changes" comment="add Tv/Headphones Class">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Chart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/OtherMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f303f97b-6eff-486d-b1e0-c9c86d31c44d" name="Changes" comment="add Chart and return full description and total">
       <change beforePath="$PROJECT_DIR$/src/org/lessons/java/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/bank/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Headphones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Headphones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Smartphone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Tv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Tv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Chart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698065871787</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add Chart and return full description and total">
+      <option name="closed" value="true" />
+      <created>1698072767200</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698072767200</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,7 +127,8 @@
     <MESSAGE value="refactor while loop for menu" />
     <MESSAGE value="add Smartphone Class" />
     <MESSAGE value="add Tv/Headphones Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Tv/Headphones Class" />
+    <MESSAGE value="add Chart and return full description and total" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Chart and return full description and total" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
