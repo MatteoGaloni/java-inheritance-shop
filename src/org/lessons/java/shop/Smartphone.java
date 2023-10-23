@@ -43,7 +43,9 @@ public class Smartphone extends Product{
         double fullPrice = getFullPrice();
         if (isPremium && getGb() < 32 ) {
             fullPrice *= 0.95;
+            return fullPrice;
         }
-        return fullPrice;
+        return super.getDiscount(isPremium);
     }
+
 }

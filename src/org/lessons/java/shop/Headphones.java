@@ -43,7 +43,8 @@ public class Headphones extends Product{
         double fullPrice = getFullPrice();
         if (isPremium && !isWireless() ) {
             fullPrice *= 0.93;
-        }
         return fullPrice;
+        }
+        return super.getDiscount(isPremium);
     }
 }

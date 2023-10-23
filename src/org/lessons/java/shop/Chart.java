@@ -5,7 +5,6 @@ public class Chart {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-
         System.out.println("Are you a Premium Customer? Enter true or false");
         boolean isPremium =  Boolean.parseBoolean(scan.nextLine());
 

@@ -43,7 +43,8 @@ public class Tv extends Product{
         double fullPrice = getFullPrice();
         if (isPremium && !isSmart()) {
             fullPrice *= 0.90;
-        }
         return fullPrice;
+        }
+        return super.getDiscount(isPremium);
     }
 }
