@@ -31,4 +31,10 @@ public class Smartphone extends Product{
     public void setGb(int gb) {
         this.gb = gb;
     }
+
+    @Override
+    public String toString() {
+
+        return super.toString() + " Imei: " + getImei() + " GB: " + getGb();
+    }
 }

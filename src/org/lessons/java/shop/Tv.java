@@ -32,4 +32,9 @@ public class Tv extends Product{
     public void setSmart(boolean smart) {
         isSmart = smart;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " Inches: " + getInches() + " Smart: " + isSmart();
+    }
 }

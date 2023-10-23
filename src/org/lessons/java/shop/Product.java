@@ -85,7 +85,12 @@ public class Product {
         return referenceCode + "-" + name;
     }
 
-//    private String getPaddedCode(){
+    @Override
+    public String toString() {
+        return "Name: " + getFullName() + " Description: " + getDescription() + " Full Price: " + getVatPrice() + " Vat: " + getVat();
+    }
+
+    //    private String getPaddedCode(){
 //        String codeString = Integer.toString(referenceCode);
 //        while (codeString.length() < 8){
 //            codeString = "0" + codeString;
