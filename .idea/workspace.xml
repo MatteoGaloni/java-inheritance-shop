@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f303f97b-6eff-486d-b1e0-c9c86d31c44d" name="Changes" comment="add getDiscount method for all Classes">
+    <list default="true" id="f303f97b-6eff-486d-b1e0-c9c86d31c44d" name="Changes" comment="fix getDiscount override">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/lessons/java/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/bank/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Headphones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Headphones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Smartphone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Tv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Tv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/lessons/java/shop/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/lessons/java/shop/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698076050565</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix getDiscount override">
+      <option name="closed" value="true" />
+      <created>1698091241768</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698091241768</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,7 +156,8 @@
     <MESSAGE value="add Chart and return full description and total" />
     <MESSAGE value="fix redundant variables" />
     <MESSAGE value="add getDiscount method for all Classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add getDiscount method for all Classes" />
+    <MESSAGE value="fix getDiscount override" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix getDiscount override" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

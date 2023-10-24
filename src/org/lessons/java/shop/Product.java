@@ -1,6 +1,6 @@
 package org.lessons.java.shop;
 
-import java.math.BigDecimal;
+//import java.math.BigDecimal;
 //import java.math.RoundingMode;
 import java.util.Random;
 
@@ -23,9 +23,9 @@ public class Product {
     public BigDecimal getFullPrice(){
         return myPrice.add(myPrice.multiply(myVat)).setScale(2, RoundingMode.HALF_EVEN);
     }
+    private BigDecimal myVat;
 */
 
-    private BigDecimal myVat;
 
     //CONSTRUCTORS
     public Product(String name, String description, double price, int vat) {
@@ -97,8 +97,6 @@ public class Product {
         }
         return fullPrice;
     }
-
-
 
 
     //    private String getPaddedCode(){

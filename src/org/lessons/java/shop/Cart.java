@@ -1,7 +1,7 @@
 package org.lessons.java.shop;
 
 import java.util.Scanner;
-public class Chart {
+public class Cart {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -12,7 +12,7 @@ public class Chart {
         int quantity = Integer.parseInt(scan.nextLine());
 
 
-        Product[] chart = new Product[quantity];
+        Product[] cart = new Product[quantity];
         double total = 0.0;
 
         for (int i = 0; i < quantity; i++) {
@@ -41,24 +41,24 @@ public class Chart {
                 if (chosenProduct == 1) {
                     System.out.println("Please enter GB: ");
                     gb = Integer.parseInt(scan.nextLine());
-                    chart[i] = new Smartphone(productName, productDescription, productPrice, productVat, gb);
+                    cart[i] = new Smartphone(productName, productDescription, productPrice, productVat, gb);
 
                 } else if (chosenProduct == 2) {
                     System.out.println("Please enter Inches: ");
                     inches = Integer.parseInt(scan.nextLine());
                     System.out.println("Smart tv?: Enter: true or false");
                     isSmart = Boolean.parseBoolean(scan.nextLine());
-                    chart[i] = new Tv(productName, productDescription, productPrice, productVat, inches, isSmart);
+                    cart[i] = new Tv(productName, productDescription, productPrice, productVat, inches, isSmart);
 
                 } else {
                     System.out.println("Please enter Color: ");
                     color = scan.nextLine();
                     System.out.println("Is it wireless?: Enter true or false");
                     isWireless = Boolean.parseBoolean(scan.nextLine());
-                    chart[i] = new Headphones(productName, productDescription, productPrice, productVat, color, isWireless);
+                    cart[i] = new Headphones(productName, productDescription, productPrice, productVat, color, isWireless);
                 }
 
-                total += chart[i].getDiscount(isPremium);
+                total += cart[i].getDiscount(isPremium);
 
             } else {
                 System.out.println("Invalid option");
@@ -66,7 +66,7 @@ public class Chart {
             }
         }
 
-        for (Product product : chart) {
+        for (Product product : cart) {
             System.out.println(product);
         }
         System.out.println(" Total: " + total + " €");
